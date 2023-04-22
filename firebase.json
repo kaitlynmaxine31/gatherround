@@ -1,0 +1,52 @@
+{
+    "hosting": {
+      "public": "public",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ]
+    },
+    "firestore": {
+      "rules": "firestore.rules",
+      "indexes": "firestore.indexes.json"
+    },
+    "functions": {
+      "predeploy": [
+        "npm --prefix \"$RESOURCE_DIR\" run lint",
+        "npm --prefix \"$RESOURCE_DIR\" run build"
+      ]
+    }
+  }
+  
+  // Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyDfs065aprJNKEEwDaCogWv2YtYIjH9LgA",
+  authDomain: "gatherround-44af0.firebaseapp.com",
+  projectId: "gatherround-44af0",
+  storageBucket: "gatherround-44af0.appspot.com",
+  messagingSenderId: "998042938898",
+  appId: "1:998042938898:web:f9b67dd42e377a410572cb",
+  measurementId: "G-452DPK0P18"
+};
+
+{"main": "lib/functions/src/index.js""
+}
+
+{
+  "functions": {
+    "predeploy": ["npm --prefix ./functions run build"],
+    "source": "functions"
+  }
+}
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
