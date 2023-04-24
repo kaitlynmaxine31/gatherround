@@ -851,8 +851,8 @@ z-index: 1;
 }
 .swiper-container-toolbar {
 width:98%;
-padding:0 0 1% 0;
-height: auto;
+padding:0 0 2% 0;
+height: 30%;
 margin:0 1%;
 position: fixed;
 bottom:0;
@@ -876,11 +876,11 @@ background-position:center center;
 }
 .toolbar-icon a{
 display:block;
-width:17.75%;
+width:14.45%;
 margin:1.1%;
 padding:1% 0;
 float:left;
-height:auto;
+height:30%;
 text-align:center;
 background-color:#fff;
 -webkit-border-radius: 6px; 
@@ -890,14 +890,16 @@ border-radius: 6px;
 .toolbar-icon a img{
 display:block;
 max-width:30%;
+height: 30%;
 margin:0 auto 10px auto;
 text-align:center;
 }
 .toolbar-icon a span{
 color:#3f5761;
 font-weight:400;
-font-size:10px;
+font-size:10px;6.6
 letter-spacing:0.5px;
+height: 30%;
 }
 .slider_trans{
 position:absolute;
@@ -933,8 +935,8 @@ line-height:50px;
 .slider-caption span.subtitle{
 width:100%;
 margin:0;
-font-size:12px;
-padding:5px;
+font-size:20px;
+padding:10px;
 font-weight:300;
 color:#F7EAD5;
 background-color:#0A88CA;
@@ -2703,7 +2705,7 @@ padding:5px 0;
 padding:0 0 5% 0;
 }
 .slider-caption{
-padding:0 4%;
+padding:0 5%;
 }
 .slider-caption h2{
 font-size:24px;
